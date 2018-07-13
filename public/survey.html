@@ -23,6 +23,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
 
     <body>
@@ -33,9 +35,10 @@
                         <strong>Answer the following questions truthfully in order to find your best match!</strong>
                     </h2>
                     <hr>
-                    <a href="/">
-                        <button class="btn btn-danger btn-lg text-right">
-                            <span class="fa fa-plus"></span>Home</button>
+                    <a href="/home">
+                        <button class="btn">
+                            <i class="fa fa-home"></i>
+                        </button>
                     </a>
                 </div>
 
@@ -226,7 +229,7 @@
                 </div>
                 <br>
                 <br>
-<!-- need this button to function -->
+                <!-- need this button to function -->
                 <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                     Submit</button>
@@ -246,7 +249,7 @@
                 </footer>
 
             </div>
-<!-- need this modal to pop up once submitted -->
+            <!-- need this modal to pop up once submitted -->
             <div id="resultsModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
 
@@ -259,8 +262,7 @@
                         </div>
                         <div class="modal-body">
                             <h2 id="matchName"></h2>
-                            <img id="matchImg" src="#"
-                                alt="">
+                            <img id="matchImg" src="#" alt="">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -328,6 +330,26 @@
     <style>
         body {
             background: #845A6D;
+        }
+
+
+        .btn {
+            background-color: DodgerBlue;
+           
+            border: none;
+           
+            color: white;
+            
+            padding: 12px 16px;
+            
+            font-size: 16px;
+            
+            cursor: pointer;
+            
+        }
+
+        .btn:hover {
+            background-color: RoyalBlue;
         }
 
         .main-container {
