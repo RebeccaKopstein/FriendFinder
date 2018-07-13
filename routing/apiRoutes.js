@@ -6,8 +6,11 @@ var totalDifference = 0;
 module.exports = function(app){
 	app.get('/api/friends', function(req, res){
 		res.json(friends);
-    });
-    
+	});
+	
+	friendData();
+	path();
+
     app.post('/api/friends', function(req, res){
 
 		var awesomeMatch = {
@@ -35,6 +38,7 @@ module.exports = function(app){
 				}
 			}
 		}
+
 
         friends.push(userData);
         friends.push(userName);
